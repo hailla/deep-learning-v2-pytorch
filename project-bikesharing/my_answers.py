@@ -96,7 +96,7 @@ class NeuralNetwork(object):
         # TODO: Backpropagated error terms - Replace these values with your calculations.
         output_error_term = error
         hidden_error_term = hidden_error * ( hidden_outputs - hidden_outputs**2)
-        #hidden_error_term = hidden_error*  hidden_outputs*(1- hidden_outputs)
+        ##hidden_error_term = hidden_error*  hidden_outputs*(1- hidden_outputs)
         
         # Weight step (input to hidden)
         delta_weights_i_h += hidden_error_term* X[:,None]
